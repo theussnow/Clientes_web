@@ -15,7 +15,7 @@ console.log(soma(10+20))
 /*testar*/
  function Fazop(funcao){
     console.log("Antes")
-    console.log(soma(10,20))
+    console.log(funcao(10,20))
     console.log("depois")
 
  }
