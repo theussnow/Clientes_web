@@ -1,4 +1,4 @@
-var leitor = require("prompt.sync")()
+var leitor = require("prompt-sync")()
 
 var nome = leitor("digite seu nome")
 var idade = leitor("digite sua idade")    /* precisa instalar a biblioteca prompt sync */
