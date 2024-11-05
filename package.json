@@ -21,5 +21,8 @@
     "web"
   ],
   "author": "Matheus Neves",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.8.4"
+  }
 }

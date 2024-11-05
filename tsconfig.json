@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist", // Diretório de saída para os arquivos .js
+      "rootDir": "./",    // Diretório raiz do projeto
+      "target": "es6",    // Alvo de compilação
+      "module": "commonjs", // Tipo de módulo
+      "strict": true       // Ativa verificações estritas
+    },
+    "include": [
+      "**/*.ts"           // Inclui todos os arquivos .ts em qualquer subdiretório
+    ],
+    "exclude": [
+      "node_modules"      // Exclui o diretório node_modules
+    ]
+  }
+  
