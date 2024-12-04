@@ -1,52 +1,32 @@
-
-    document.addEventListener("DOMContentLoaded",inputlist);
-
-
-    function inputlist(){
-
-        const maindiv = document.getElementById('maindiv')
-
-        const input= document.createElement('input')
-        input.type= 'text'
-        input.id= 'input-id'
-
-        nomes= ["joão", "Ana", "joaquin"]
-
-        
-        input.addEventListener('input',()=>{
-            const ol = document.createElement('ol')
-            
-            nomedigitado= input.value
-            while(ol.firstChild){
-                ol.removeChild(ol.firstChild)
-            }
-            
-                nomes.forEach(nome => {
-                    
-                    const li = document.createElement('li')
-                    li.textContent = nome
-                    ol.append(li)
-                    
-                    // if(n.i  includes(nomedigitado)){
-                    //     console.log(nome)
-                    // }
-            
-                });
-                maindiv.append(ol)
-        })
+document.addEventListener('DOMContentLoaded', () => {
     
-
-        const label= document.createElement('label')
-        label.htmlFor= 'input-id'
-        label.textContent= "Nome: "
-    
-        maindiv.append(label,input)
-
-
-
-
-
-    }
-    
+    const input = document.querySelector('#nameInput');
+    const listItems = document.querySelectorAll('#nameList li');
   
-
+    
+    function highlightNames() {
+      const query = input.value.toLowerCase(); 
+  
+      listItems.forEach((item) => {
+        const itemName = item.textContent || ''; 
+  
+        
+        if (itemName.toLowerCase().includes(query) && query !== '') {
+          const startIndex = itemName.toLowerCase().indexOf(query);
+          const endIndex = startIndex + query.length;
+          item.innerHTML =
+            itemName.substring(0, startIndex) +
+            '<b>' +
+            itemName.substring(startIndex, endIndex) +
+            '</b>' +
+            itemName.substring(endIndex);
+        } else {
+          item.innerHTML = itemName; 
+        }
+      });
+    }
+  
+    
+    input.addEventListener('input', highlightNames);
+  });
+  
