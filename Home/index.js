@@ -38,7 +38,7 @@ button.addEventListener('click', procurar)
 
 function adicionar(){
     let nomeinserido = input2.value.toLowerCase()
-    jogoexistente = jogos.some(jogo=> jogo.nome === nomeinserido)
+    jogoexistente = jogos.some(jogo=> jogo.nome === nomeinserido)//some: Retorna um booleano: true se pelo menos um elemento no array atender à condição, e false caso contrário.
 
 
 
@@ -62,7 +62,7 @@ console.log(jogos)
 function procurar(){
 
    let nomeinserido = input.value.toLowerCase();
-   jogoencontrado= jogos.find(jogo => jogo.nome===nomeinserido)
+   jogoencontrado= jogos.find(jogo => jogo.nome===nomeinserido)//Retorna o primeiro elemento que atende à condição.
 
    if(jogoencontrado){
     resultado.innerHTML= `O jogo ${jogoencontrado.nome} foi encontrado`

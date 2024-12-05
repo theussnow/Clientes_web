@@ -1,0 +1,87 @@
+function createElement<K extends keyof HTMLElementTagNameMap>(
+    tagName: K,
+    attributes: { [key: string]: string },
+    textContent?: string
+  ): HTMLElementTagNameMap[K] {
+    const element = document.createElement(tagName);
+    Object.entries(attributes).forEach(([key, value]) => {
+      element.setAttribute(key, value);
+    });
+    if (textContent) element.textContent = textContent;
+    return element;
+  }
+
+//Exemplo 1: Lista Não Ordenada (ul):
+const ul = createElement("ul", { class: "unordered-list" });
+["Item 1", "Item 2", "Item 3"].forEach((item) => {
+  const li = createElement("li", {}, item);
+  ul.appendChild(li);
+});
+document.body.appendChild(ul);
+
+//Exemplo 2: Lista Ordenada (ol):
+
+const ol = createElement("ol", { class: "ordered-list" });
+["Primeiro", "Segundo", "Terceiro"].forEach((item) => {
+  const li = createElement("li", {}, item);
+  ol.appendChild(li);
+});
+document.body.appendChild(ol);
+
+
+
+
+// 2. Tabelas
+// Exemplo 1: Tabela Simples com Cabeçalhos e Linhas:
+
+const table = createElement("table", { class: "simple-table", border: "1" });
+const thead = createElement("thead", {});
+const tbody = createElement("tbody", {});
+
+// Cabeçalhos
+const headerRow = createElement("tr", {});
+["Nome", "Idade", "Cidade"].forEach((header) => {
+  const th = createElement("th", {}, header);
+  headerRow.appendChild(th);
+});
+thead.appendChild(headerRow);
+
+// Linhas de Dados
+[
+  ["João", "25", "São Paulo"],
+  ["Maria", "30", "Rio de Janeiro"],
+  ["Pedro", "28", "Belo Horizonte"],
+].forEach((rowData) => {
+  const row = createElement("tr", {});
+  rowData.forEach((cellData) => {
+    const td = createElement("td", {}, cellData);
+    row.appendChild(td);
+  });
+  tbody.appendChild(row);
+});
+
+table.appendChild(thead);
+table.appendChild(tbody);
+document.body.appendChild(table);
+
+
+//Formulário
+const form = createElement("form", { action: "#", method: "POST" });
+form.appendChild(createElement("label", { for: "username" }, "Username:"));
+form.appendChild(createElement("input", { type: "text", id: "username", name: "username", required: "true" }));
+
+form.appendChild(createElement("label", { for: "password" }, "Password:"));
+form.appendChild(createElement("input", { type: "password", id: "password", name: "password", required: "true" }));
+
+form.appendChild(createElement("button", { type: "submit" }, "Submit"));
+document.body.appendChild(form);
+
+
+
+//DropDown
+const select = createElement("select", { id: "options", name: "options" });
+["Opção 1", "Opção 2", "Opção 3"].forEach((optionText, index) => {
+  const option = createElement("option", { value: ${index + 1} }, optionText);
+  select.appendChild(option);
+});
+document.body.appendChild(select);
