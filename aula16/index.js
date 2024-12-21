@@ -1,5 +1,16 @@
+class IdadeMinimaError extends Error {
+    constructor(message) {
+        super(message);
+        this.name = "IdadeMinimaError";
+    }
+}
+
+
 class Pessoa {
     constructor(nome, idade, dataNascimento, estadoCivil) {
+        if (idade < 15) {
+            throw new IdadeMinimaError("A idade mínima para cadastro é 15 anos.");
+        }
         this.nome = nome;
         this.idade = idade;
         this.dataNascimento = dataNascimento;
@@ -82,14 +93,22 @@ function montaDivCadastro() {
     tButton.textContent = "Cadastrar";
     tButton.addEventListener("click", (e) => {
         e.preventDefault();
-        let pessoa = new Pessoa(
-            document.getElementById("campo_nome").value,
-            document.getElementById("campo_idade").value,
-            document.getElementById("campo_data_de_nascimento").value,
-            document.getElementById("campo_estado_civil").value
-        );
-        cadastrarPessoa(pessoa);
-        apagaDivTabela(document.getElementById("divAux"), "");
+        try {
+            let pessoa = new Pessoa(
+                document.getElementById("campo_nome").value,
+                parseInt(document.getElementById("campo_idade").value, 10),
+                document.getElementById("campo_data_de_nascimento").value,
+                document.getElementById("campo_estado_civil").value
+            );
+            cadastrarPessoa(pessoa);
+            apagaDivTabela(document.getElementById("divAux"), "");
+        } catch (error) {
+            if (error instanceof IdadeMinimaError) {
+                alert(error.message);
+            } else {
+                console.error(error);
+            }
+        }
     });
     fForm.appendChild(tButton);
 }
