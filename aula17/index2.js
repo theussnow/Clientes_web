@@ -1,5 +1,5 @@
-function carregar100(){
-    if (Math.random () > 0.5){
+function carregar100(num){
+    if (num> 5){
         return new Promise (resolve2 =>{
             setTimeout(()=>{
                 resolve2(100)
@@ -12,7 +12,7 @@ function carregar100(){
 
 
 document.addEventListener('DOMContentLoaded',()=>{
-    const promess = carregar100()
+    const promess = carregar100(8)
         promess.then((numero)=>{
             console.log(`O numero ${numero} foi encontrado`)
         })
