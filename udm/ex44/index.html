@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <section class="container">
+    <table>
+      <thead>
+          <tr>
+              <th>IMC</th>
+              <th>Resultado</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>Menos do que 18,5</td>
+              <td>Abaixo do peso</td>
+          </tr>
+          <tr>
+              <td>Entre 18,5 e 24,9</td>
+              <td>Peso normal</td>
+          </tr>
+          <tr>
+              <td>Entre 25 e 29,9</td>
+              <td>Sobrepeso</td>
+          </tr>
+          <tr>
+              <td>Entre 30 e 34,9</td>
+              <td>Obesidade grau 1</td>
+          </tr>
+          <tr>
+              <td>Entre 35 e 39,9</td>
+              <td>Obesidade grau 2</td>
+          </tr>
+          <tr>
+              <td>Mais do que 40</td>
+              <td>Obesidade grau 3</td>
+          </tr>
+      </tbody>
+  </table>
+  
+  <form id="form" action="">
+
+
+    <label for="peso">Peso: </label>
+    <input type="text" name="" id="peso">
+
+    <label for="altura">Altura: </label>
+    <input type="text" name="" id="altura">
+
+    <button id="button">enviar</button>
+    <div id="result"></div>
+
+  </form>
+</section>
+  <script src="./index.js"></script>
+</body>
+</html>
