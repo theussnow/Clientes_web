@@ -3,7 +3,7 @@ function escopo(){
 
     var form = document.querySelector('#form')
     var result = document.querySelector('#result')
-    var button = document.querySelector('button')
+    var button = document.querySelector('#button')
     
     button.addEventListener('click', function(){
         event.preventDefault(); // Evita o comportamento padrão do formulário
@@ -32,10 +32,6 @@ function escopo(){
         result.innerHTML = `O seu imc é ${imc.toFixed(2)}, ${resultado} `
 
     })
-
-
-
-
 
 
 }
