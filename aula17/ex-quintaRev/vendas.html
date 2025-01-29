@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Vendas</h1>
+    <form id="formVenda">
+        <label for="vendedor">Vendedor:</label>
+        <select id="vendedor" required>
+            <option value="Vendedor 1">Vendedor 1</option>
+            <option value="Vendedor 2">Vendedor 2</option>
+            <option value="Vendedor 3">Vendedor 3</option>
+        </select>
+
+        <label for="filtroNome">Filtrar por Nome:</label>
+        <input type="text" id="filtroNome">
+
+        <label for="filtroFabricante">Filtrar por Fabricante:</label>
+        <select id="filtroFabricante">
+            <option value="">Todos</option>
+            <option value="Fabricante A">Fabricante A</option>
+            <option value="Fabricante B">Fabricante B</option>
+            <option value="Fabricante C">Fabricante C</option>
+        </select>
+
+        <button type="button" id="filtrar">Filtrar</button>
+
+        <div id="listaProdutos"></div>
+
+        <h2>Itens da Venda</h2>
+        <ul id="itensVenda"></ul>
+
+        <h3>Total: <span id="totalVenda">0.00</span></h3>
+
+        <button type="submit">Finalizar Venda</button>
+    </form>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

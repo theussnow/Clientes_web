@@ -1,0 +1,168 @@
+{
+  "produtos": [
+    {
+      "id": "215b",
+      "nome": "banana",
+      "fabricante": "Fabricante A",
+      "preco": 5,
+      "tipoUnidade": "Unidade"
+    },
+    {
+      "id": "4282",
+      "nome": "manga",
+      "fabricante": "Fabricante C",
+      "preco": 11,
+      "tipoUnidade": "Unidade"
+    },
+    {
+      "id": "5920",
+      "nome": "frango",
+      "fabricante": "Fabricante C",
+      "preco": 11,
+      "tipoUnidade": "Quilo"
+    }
+  ],
+  "vendas": [
+    {
+      "id": "edc9",
+      "data": "2025-01-29T19:21:12.694Z",
+      "vendedor": "Vendedor 1",
+      "produtos": [
+        {
+          "id": "215b",
+          "nome": "banana",
+          "fabricante": "Fabricante A",
+          "preco": 5,
+          "tipoUnidade": "Unidade"
+        }
+      ],
+      "total": 5
+    },
+    {
+      "id": "84a7",
+      "data": "2025-01-29T19:21:19.190Z",
+      "vendedor": "Vendedor 1",
+      "produtos": [
+        {
+          "id": "215b",
+          "nome": "banana",
+          "fabricante": "Fabricante A",
+          "preco": 5,
+          "tipoUnidade": "Unidade"
+        }
+      ],
+      "total": 5
+    },
+    {
+      "id": "f0d9",
+      "data": "2025-01-29T19:21:23.576Z",
+      "vendedor": "Vendedor 1",
+      "produtos": [],
+      "total": 0
+    },
+    {
+      "id": "91de",
+      "data": "2025-01-29T19:21:39.319Z",
+      "vendedor": "Vendedor 1",
+      "produtos": [
+        {
+          "id": "215b",
+          "nome": "banana",
+          "fabricante": "Fabricante A",
+          "preco": 5,
+          "tipoUnidade": "Unidade"
+        }
+      ],
+      "total": 5
+    },
+    {
+      "id": "5ea0",
+      "data": "2025-01-29T19:21:43.892Z",
+      "vendedor": "Vendedor 1",
+      "produtos": [
+        {
+          "id": "215b",
+          "nome": "banana",
+          "fabricante": "Fabricante A",
+          "preco": 5,
+          "tipoUnidade": "Unidade"
+        }
+      ],
+      "total": 5
+    },
+    {
+      "id": "331c",
+      "data": "2025-01-29T19:21:53.075Z",
+      "vendedor": "Vendedor 1",
+      "produtos": [
+        {
+          "id": "215b",
+          "nome": "banana",
+          "fabricante": "Fabricante A",
+          "preco": 5,
+          "tipoUnidade": "Unidade"
+        }
+      ],
+      "total": 5
+    },
+    {
+      "id": "790c",
+      "data": "2025-01-29T19:22:37.630Z",
+      "vendedor": "Vendedor 1",
+      "produtos": [
+        {
+          "id": "4282",
+          "nome": "manga",
+          "fabricante": "Fabricante C",
+          "preco": 11,
+          "tipoUnidade": "Unidade"
+        }
+      ],
+      "total": 11
+    },
+    {
+      "id": "dcbf",
+      "data": "2025-01-29T19:22:41.977Z",
+      "vendedor": "Vendedor 1",
+      "produtos": [],
+      "total": 0
+    },
+    {
+      "id": "7e6a",
+      "data": "2025-01-29T19:25:26.714Z",
+      "vendedor": "Vendedor 1",
+      "produtos": [
+        {
+          "id": "215b",
+          "nome": "banana",
+          "fabricante": "Fabricante A",
+          "preco": 5,
+          "tipoUnidade": "Unidade"
+        }
+      ],
+      "total": 5
+    },
+    {
+      "id": "8dac",
+      "data": "2025-01-29T19:25:42.231Z",
+      "vendedor": "Vendedor 1",
+      "produtos": [],
+      "total": 0
+    },
+    {
+      "id": "82ea",
+      "data": "2025-01-29T19:26:14.885Z",
+      "vendedor": "Vendedor 2",
+      "produtos": [
+        {
+          "id": "5920",
+          "nome": "frango",
+          "fabricante": "Fabricante C",
+          "preco": 11,
+          "tipoUnidade": "Quilo"
+        }
+      ],
+      "total": 11
+    }
+  ]
+}

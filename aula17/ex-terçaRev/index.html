@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtro por Estado</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Filtrar Pessoas por Estado</h1>
+    <form id="formFiltro">
+        <label for="estado">Selecione o Estado:</label>
+        <select id="estado" required>
+            <option value="">Todos</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PR">Paraná</option>
+            
+        </select>
+        <button type="button" id="filtrar">Filtrar</button>
+    </form>
+
+    <h2>Resultados</h2>
+    <table id="tabelaPessoas">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Cidade</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+        </tbody>
+    </table>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
