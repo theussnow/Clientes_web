@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const apiUrl = 'http://localhost:3000/users';
+    const apiUrl = 'http://localhost:3000/users'; // json-server --watch db.json --port 3000 //
+
         
     document.getElementById('userForm').addEventListener('submit', function(e) {
         e.preventDefault();
