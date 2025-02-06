@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": "d3fc",
+      "nome": "",
+      "sexo": "M",
+      "email": "",
+      "idade": ""
+    },
+    {
+      "id": "886f",
+      "nome": "teste",
+      "sexo": "M",
+      "email": "",
+      "idade": ""
+    },
+    {
+      "id": "e036",
+      "nome": "",
+      "sexo": "M",
+      "email": "",
+      "idade": ""
+    }
+  ]
+}

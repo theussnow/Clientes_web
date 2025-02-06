@@ -20,6 +20,20 @@
       "fabricante": "Fabricante C",
       "preco": 11,
       "tipoUnidade": "Quilo"
+    },
+    {
+      "id": "4177",
+      "nome": "matheus",
+      "fabricante": "Fabricante A",
+      "preco": 23,
+      "tipoUnidade": "Unidade"
+    },
+    {
+      "id": "ae3c",
+      "nome": "kiwi",
+      "fabricante": "Fabricante C",
+      "preco": 5,
+      "tipoUnidade": "Quilo"
     }
   ],
   "vendas": [
@@ -163,6 +177,21 @@
         }
       ],
       "total": 11
+    },
+    {
+      "id": "883d",
+      "data": "2025-02-06T00:47:09.561Z",
+      "vendedor": "Vendedor 1",
+      "produtos": [
+        {
+          "id": "215b",
+          "nome": "banana",
+          "fabricante": "Fabricante A",
+          "preco": 5,
+          "tipoUnidade": "Unidade"
+        }
+      ],
+      "total": 5
     }
   ]
 }
