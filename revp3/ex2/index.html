@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+</head>
+<body>
+    <h2>Cadastro de Produtos</h2>
+    <form id="formCadastro">
+        <label for="nomeProduto">Nome do Produto:</label>
+        <input type="text" id="nomeProduto" required>
+
+        <label for="preco">Preço:</label>
+        <input type="number" id="preco" required>
+
+        <label for="tipoProduto">Tipo de Produto:</label>
+        <select id="tipoProduto">
+            <option value="">Selecione</option>
+            <option value="Eletronico">Eletrônico</option>
+            <option value="Movel">Móvel</option>
+            <option value="Vestuario">Vestuário</option>
+        </select>
+
+        <div id="campoProduto"></div> 
+
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <h2>Pendentes de Envio</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nome do Produto</th>
+                <th>Preço</th>
+                <th>Detalhes</th>
+            </tr>
+        </thead>
+        <tbody id="tabelaPendentes"></tbody>
+    </table>
+    <button id="enviarParaServidor">Enviar para o Servidor</button>
+
+    <h2>Enviados</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nome do Produto</th>
+                <th>Preço</th>
+                <th>Detalhes</th>
+            </tr>
+        </thead>
+        <tbody id="tabelaEnviados"></tbody>
+    </table>
+
+    <script src="index.js"></script>
+</body>
+</html>

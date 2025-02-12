@@ -1,0 +1,10 @@
+{
+  "products": [
+    {
+      "id": "dc43",
+      "nomeProduto": "celular",
+      "preco": "56",
+      "detalhes": "Marca: samsung"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Dinâmico</title>
+</head>
+<body>
+    <h2>Cadastro</h2>
+    <form id="formCadastro">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" required>
+
+        <label for="tipoDocumento">Tipo de Documento:</label>
+        <select id="tipoDocumento">
+            <option value="">Selecione</option>
+            <option value="CPF">CPF</option>
+            <option value="RG">RG</option>
+        </select>
+
+        <div id="campoDocumento"></div> 
+
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <h2>Pendentes de Envio</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Documento</th>
+            </tr>
+        </thead>
+        <tbody id="tabelaPendentes"></tbody>
+    </table>
+    <button id="enviarParaServidor">Enviar para o Servidor</button>
+
+    <h2>Enviados</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Documento</th>
+            </tr>
+        </thead>
+        <tbody id="tabelaEnviados"></tbody>
+    </table>
+
+    <script src="index.js"></script>
+</body>
+</html>

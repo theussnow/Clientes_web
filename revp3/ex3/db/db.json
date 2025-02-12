@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "nomeProduto": "Notebook",
+      "preco": 3000,
+      "detalhes": "Marca: Dell"
+    },
+    {
+      "id": "2",
+      "nomeProduto": "Smartphone",
+      "preco": 1500,
+      "detalhes": "Marca: Samsung"
+    },
+    {
+      "id": "3",
+      "nomeProduto": "Cadeira",
+      "preco": 200,
+      "detalhes": "Material: Madeira"
+    },
+    {
+      "id": "4",
+      "nomeProduto": "Mesa",
+      "preco": 500,
+      "detalhes": "Material: Vidro"
+    },
+    {
+      "id": "5",
+      "nomeProduto": "Camiseta",
+      "preco": 50,
+      "detalhes": "Tamanho: M"
+    },
+    {
+      "id": "6",
+      "nomeProduto": "Calça",
+      "preco": 100,
+      "detalhes": "Tamanho: G"
+    },
+    {
+      "id": "7",
+      "nomeProduto": "Tablet",
+      "preco": 800,
+      "detalhes": "Marca: Apple"
+    },
+    {
+      "id": "8",
+      "nomeProduto": "Monitor",
+      "preco": 600,
+      "detalhes": "Marca: LG"
+    },
+    {
+      "id": "9",
+      "nomeProduto": "Sofá",
+      "preco": 1200,
+      "detalhes": "Material: Couro"
+    },
+    {
+      "id": "10",
+      "nomeProduto": "Tênis",
+      "preco": 300,
+      "detalhes": "Tamanho: 42"
+    },
+    {
+      "id": "4127",
+      "nomeProduto": "ergo",
+      "preco": "59",
+      "detalhes": "teste"
+    },
+    {
+      "id": "3bca",
+      "nomeProduto": "Notebook",
+      "preco": "3000",
+      "detalhes": "Marca: Dell"
+    }
+  ]
+}
